@@ -12,6 +12,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import tek.capstone.bdd.framework.pages.POMFactory;
 import tek.capstone.bdd.framework.utilities.BrowserUtilities;
+import tek.capstone.bdd.framework.utilities.DataGenerator;
 
 public class RetailAccountSteps extends BrowserUtilities{
 
@@ -28,8 +29,8 @@ public class RetailAccountSteps extends BrowserUtilities{
 	public void userUpdateNameAndPhone(String name, String phone){
 		clearTextUsingSendKeys(factory.accountPage().nameField);
 		clearTextUsingSendKeys(factory.accountPage().phoneField);
-		sendText(factory.accountPage().nameField, name);
-		sendText(factory.accountPage().phoneField, phone);
+		sendText(factory.accountPage().nameField, DataGenerator.data(name));
+		sendText(factory.accountPage().phoneField, DataGenerator.data(phone));
 		logger.info("user updated name and phone");
 	}
 	
@@ -79,8 +80,8 @@ public class RetailAccountSteps extends BrowserUtilities{
 	@And("User fill Debit or credit card information")
 	public void userFillDebitOrCreditCardInfo(DataTable dataTable) {
 		List<Map<String, String>> cardsInfo = dataTable.asMaps(String.class, String.class);
-		sendText(factory.accountPage().cardNumberField, cardsInfo.get(0).get("cardNumber"));
-		sendText(factory.accountPage().nameOnCardField, cardsInfo.get(0).get("nameOnCard"));
+		sendText(factory.accountPage().cardNumberField, DataGenerator.data(cardsInfo.get(0).get("cardNumber")));
+		sendText(factory.accountPage().nameOnCardField, DataGenerator.data(cardsInfo.get(0).get("nameOnCard")));
 		selectByVisibleText(factory.accountPage().expirationMonthInput, cardsInfo.get(0).get("expirationMonth"));
 		selectByVisibleText(factory.accountPage().expirationYearInput, cardsInfo.get(0).get("expirationYear"));
 		sendText(factory.accountPage().securityCodeField, cardsInfo.get(0).get("securityCode"));
@@ -112,9 +113,9 @@ public class RetailAccountSteps extends BrowserUtilities{
 	public void userEditInfo(DataTable dataTable) {
 		List<Map<String, String>> editCardsInfo = dataTable.asMaps(String.class, String.class);
 		clearTextUsingSendKeys(factory.accountPage().cardNumberField);
-		sendText(factory.accountPage().cardNumberField, editCardsInfo.get(0).get("cardNumber"));
+		sendText(factory.accountPage().cardNumberField, DataGenerator.data(editCardsInfo.get(0).get("cardNumber")));
 		clearTextUsingSendKeys(factory.accountPage().nameOnCardField);
-		sendText(factory.accountPage().nameOnCardField, editCardsInfo.get(0).get("nameOnCard"));
+		sendText(factory.accountPage().nameOnCardField, DataGenerator.data(editCardsInfo.get(0).get("nameOnCard")));
 		selectByVisibleText(factory.accountPage().expirationMonthInput, editCardsInfo.get(0).get("expirationMonth"));
 		selectByVisibleText(factory.accountPage().expirationYearInput, editCardsInfo.get(0).get("expirationYear"));
 		clearTextUsingSendKeys(factory.accountPage().securityCodeField);
@@ -161,18 +162,18 @@ public class RetailAccountSteps extends BrowserUtilities{
 		List<Map<String, String>> addressInfo = dataTable.asMaps(String.class, String.class);
 		selectByVisibleText(factory.accountPage().countryDropdown, addressInfo.get(0).get("country"));
 		clearTextUsingSendKeys(factory.accountPage().fullNameAddress);
-		sendText(factory.accountPage().fullNameAddress, addressInfo.get(0).get("fullName"));
+		sendText(factory.accountPage().fullNameAddress, DataGenerator.data(addressInfo.get(0).get("fullName")));
 		clearTextUsingSendKeys(factory.accountPage().phoneNumberAddress);
-		sendText(factory.accountPage().phoneNumberAddress, addressInfo.get(0).get("phoneNumber"));
+		sendText(factory.accountPage().phoneNumberAddress, DataGenerator.data(addressInfo.get(0).get("phoneNumber")));
 		clearTextUsingSendKeys(factory.accountPage().streetAddress);
-		sendText(factory.accountPage().streetAddress, addressInfo.get(0).get("streetAddress"));
+		sendText(factory.accountPage().streetAddress, DataGenerator.data(addressInfo.get(0).get("streetAddress")));
 		clearTextUsingSendKeys(factory.accountPage().apartmentAddress);
 		sendText(factory.accountPage().apartmentAddress, addressInfo.get(0).get("apt"));
 		clearTextUsingSendKeys(factory.accountPage().cityAddress);
-		sendText(factory.accountPage().cityAddress, addressInfo.get(0).get("city"));
+		sendText(factory.accountPage().cityAddress, DataGenerator.data(addressInfo.get(0).get("city")));
 		selectByVisibleText(factory.accountPage().stateAddress, addressInfo.get(0).get("state"));
 		clearTextUsingSendKeys(factory.accountPage().zipCodeAddress);
-		sendText(factory.accountPage().zipCodeAddress, addressInfo.get(0).get("zipCode"));
+		sendText(factory.accountPage().zipCodeAddress, DataGenerator.data(addressInfo.get(0).get("zipCode")));
 		logger.info("user added the address information");
 	}
 	
@@ -192,6 +193,7 @@ public class RetailAccountSteps extends BrowserUtilities{
 	//7
 	@And("User click on edit address option")
 	public void userClickEditOnAddress() {
+		waitTillPresence(factory.accountPage().editBtnOnAddress);
 		click(factory.accountPage().editBtnOnAddress);
 		logger.info("user clicked on edit option on address");
 	}
@@ -202,7 +204,7 @@ public class RetailAccountSteps extends BrowserUtilities{
 		logger.info("user clicked on Update Your Address button");
 	}
 	
-	@Then("a message should be displayed ‘Address Updated Successfully’")
+	@Then("a message should be displayed Address Updated Successfully")
 	public void addressUpdatedMessageShouldBeDisplayed() {
 		waitTillPresence(factory.accountPage().addressUpdatedMessage);
 		Assert.assertTrue(isElementDisplayed(factory.accountPage().addressUpdatedMessage));

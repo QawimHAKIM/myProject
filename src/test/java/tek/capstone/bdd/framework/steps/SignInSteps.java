@@ -12,6 +12,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import tek.capstone.bdd.framework.pages.POMFactory;
 import tek.capstone.bdd.framework.utilities.BrowserUtilities;
+import tek.capstone.bdd.framework.utilities.DataGenerator;
 
 public class SignInSteps extends BrowserUtilities {
 	
@@ -62,8 +63,8 @@ public class SignInSteps extends BrowserUtilities {
 	@And("User fill the signUp information with below data")
 	public void userFillTheSignUpForm(DataTable dataTable) {
 		List<Map<String, String>> signUpInfo = dataTable.asMaps(String.class, String.class);
-		sendText(factory.signInPage().signUpName, signUpInfo.get(0).get("name"));
-		sendText(factory.signInPage().signUpEmail, signUpInfo.get(0).get("email"));
+		sendText(factory.signInPage().signUpName, DataGenerator.data(signUpInfo.get(0).get("name")));
+		sendText(factory.signInPage().signUpEmail, DataGenerator.data(signUpInfo.get(0).get("email")));
 		sendText(factory.signInPage().signUpPassword, signUpInfo.get(0).get("password"));
 		sendText(factory.signInPage().signUpConfirmPass, signUpInfo.get(0).get("confirmPassword"));
 		logger.info("user filled the signUp information form");

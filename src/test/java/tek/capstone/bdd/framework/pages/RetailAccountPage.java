@@ -101,7 +101,7 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(xpath = "//img[@alt='Master Card']")
 	public WebElement debitOrCreditCardPicture;
 	
-	@FindBy(xpath = "(//button[text()='Edit'])[1]")
+	@FindBy(xpath = "//button[@class='text-blue-800 cursor-pointer hover:underline' and text()='Edit']")
 	public WebElement editBtnOnCard;
 	
 	@FindBy(xpath = "//button[text()='remove']")
@@ -153,7 +153,7 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(id = "zipCodeError")
 	public WebElement zipCodeErrorOnAddress;
 	
-	@FindBy(xpath = "(//button[text()='Edit'])[2]")
+	@FindBy(xpath = "//button[@class='account__address-btn' and text()='Edit']")
 	public WebElement editBtnOnAddress;
 	
 	@FindBy(xpath = "//button[text()='Remove']")
