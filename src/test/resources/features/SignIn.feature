@@ -1,3 +1,4 @@
+@jenkins
 Feature: Sign In Feature
 
   Background: 
@@ -5,7 +6,7 @@ Feature: Sign In Feature
     When User click on Sign in option
 
   Scenario: Verify user can sign in into Retail Application
-    And User enter email "user@outlook.com" and password "User@user1"
+    And User enter email "test12345@outlook.com" and password "Test@1234567"
     And User click on login button
     Then User should be logged in into Account
 

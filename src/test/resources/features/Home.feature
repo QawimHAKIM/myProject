@@ -1,3 +1,4 @@
+@jenkins
 Feature: Retail Home Page
 
   Background: 
@@ -28,7 +29,7 @@ Feature: Retail Home Page
   Scenario: Verify User can add an item to cart
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'test12345@outlook.com' and password 'Test@123456'
+    And User enter email 'test12345@outlook.com' and password 'Test@1234567'
     And User click on login button
     And User should be logged in into Account
     And User change the category to 'Smart Home'
@@ -42,7 +43,7 @@ Feature: Retail Home Page
   @home4
   Scenario: Verify User can place an order without Shipping address and payment Method on file
     When User click on Sign in option
-    And User enter email 'test12345@outlook.com' and password 'Test@123456'
+    And User enter email 'test12345@outlook.com' and password 'Test@1234567'
     And User click on login button
     And User should be logged in into Account
     And User change the category to 'Smart Home'
@@ -57,12 +58,12 @@ Feature: Retail Home Page
     And User click Add a new address link for shipping address
     And User fill new address form with below information
       | country       | fullName | phoneNumber | streetAddress | apt | city | state      | zipCode |
-      | United States | Test     |  1231231231 |           123 | 123 | town | California |   12345 |
+      | United States | fullName     |  phoneNumber |           streetAddress | 123 | city | state |   zipCode |
     And User click Add Your Address button
     And User click Add a credit card or Debit Card for Payment method
     And User fill Debit or credit card information
       | cardNumber       | nameOnCard | expirationMonth | expirationYear | securityCode |
-      | 1234567894561234 | Tester     |               4 |           2024 |          789 |
+      | cardNumber | fullName     |               4 |           2024 |          789 |
     And User click on Add your card button
     And User click on Place Your Order
     Then a message should be displayed ‘Order Placed, Thanks’
@@ -70,7 +71,7 @@ Feature: Retail Home Page
 	@home5
   Scenario: Verify User can place an order with Shipping address and payment Method on file
     When User click on Sign in option
-    And User enter email 'test12345@outlook.com' and password 'Test@123456'
+    And User enter email 'test12345@outlook.com' and password 'Test@1234567'
     And User click on login button
     And User should be logged in into Account
     And User change the category to 'Electronics'

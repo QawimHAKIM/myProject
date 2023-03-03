@@ -16,16 +16,18 @@ public class RetailOrderSteps extends BrowserUtilities {
 
 	// 1
 	@And("User click on Orders section")
-	public void userClickOnOrdersSection() {
+	public void userClickOnOrdersSection() throws InterruptedException {
 		click(factory.homePage().ordersBtn);
 		logger.info("user clicked on orders option");
+		
 	}
 
 	@And("User click on first order in list")
 	public void userClickOnFirstOrderInList() {
+		waitTillPresence(factory.orderPage().orders.get(0));
 		List<WebElement> orders = factory.orderPage().orders;
 		for (WebElement e : orders) {
-			click(e);
+			clickElementWithJs(e);
 			break;
 		}
 		logger.info("user clicked on order");
@@ -62,6 +64,13 @@ public class RetailOrderSteps extends BrowserUtilities {
 	// 2
 	@And("User click on Return Items button")
 	public void userClickOnReturnItemsButton() {
+		List<WebElement> orders = factory.orderPage().orders;
+		for (WebElement e : orders) {
+			click(e);
+//			if(isElementDisplayed(factory.orderPage().returnBtn)) {
+//				break;
+//			}
+		}
 		click(factory.orderPage().returnBtn);
 		logger.info("user clicked on return item button");
 	}

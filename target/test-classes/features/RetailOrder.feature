@@ -1,9 +1,10 @@
+@jenkins
 Feature: Retail Order Page
 
   Background: 
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'test12345@outlook.com' and password 'Test@123456'
+    And User enter email 'test12345@outlook.com' and password 'Test@1234567'
     And User click on login button
     And User should be logged in into Account
     And User click on Orders section
@@ -22,7 +23,7 @@ Feature: Retail Order Page
     And User select the Return Reason 'Item damaged'
     And User select the drop off service 'FedEx'
     And User click on Return Order button
-    Then a cancelation message should be displayed 'Return was successful'
+    Then a cancelation message should be displayed 'Return was successfull'
 
 	@order3
   Scenario: Verify User can write a review on order placed

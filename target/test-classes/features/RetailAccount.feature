@@ -1,4 +1,4 @@
-@jenkins
+
 Feature: Retail Account Page
 
   Background: 
@@ -65,6 +65,6 @@ Feature: Retail Account Page
   Scenario: Verify User can Update password
     And User enter below information
       | previousPassword | newPassword | confirmPassword |
-      | Test@123456     | Test@1234567 | Test@1234567     |
+      | Test@1234567     | Test@123456 | Test@123456     |
     And User click on Change Password button
     Then a message should be displayed ‘Password Updated Successfully’
