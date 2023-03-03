@@ -1,3 +1,4 @@
+@jenkins
 Feature: Retail Account Page
 
   Background: 

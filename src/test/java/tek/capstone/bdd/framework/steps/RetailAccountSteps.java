@@ -171,7 +171,7 @@ public class RetailAccountSteps extends BrowserUtilities{
 		sendText(factory.accountPage().apartmentAddress, addressInfo.get(0).get("apt"));
 		clearTextUsingSendKeys(factory.accountPage().cityAddress);
 		sendText(factory.accountPage().cityAddress, DataGenerator.data(addressInfo.get(0).get("city")));
-		selectByVisibleText(factory.accountPage().stateAddress, DataGenerator.data(addressInfo.get(0).get("state")));
+		selectByVisibleText(factory.accountPage().stateAddress, addressInfo.get(0).get("state"));
 		clearTextUsingSendKeys(factory.accountPage().zipCodeAddress);
 		sendText(factory.accountPage().zipCodeAddress, DataGenerator.data(addressInfo.get(0).get("zipCode")));
 		logger.info("user added the address information");

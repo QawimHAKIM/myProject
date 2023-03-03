@@ -58,7 +58,7 @@ Feature: Retail Home Page
     And User click Add a new address link for shipping address
     And User fill new address form with below information
       | country       | fullName | phoneNumber | streetAddress | apt | city | state      | zipCode |
-      | United States | fullName     |  phoneNumber |           streetAddress | 123 | city | state |   zipCode |
+      | United States | fullName     |  phoneNumber |           streetAddress | 123 | city | California |   zipCode |
     And User click Add Your Address button
     And User click Add a credit card or Debit Card for Payment method
     And User fill Debit or credit card information
