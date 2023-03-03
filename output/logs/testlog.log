@@ -4385,3 +4385,281 @@
 2023-03-02 18:02:41,786 - logger_file -INFO - user filled the signUp information form
 2023-03-02 18:02:41,901 - logger_file -INFO - user has clicked on signUp button
 2023-03-02 18:02:42,181 - logger_file -INFO - user has logged into account page
+2023-03-02 21:12:22,001 - logger_file -INFO - user is on retail website
+2023-03-02 21:12:22,007 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 21:12:22,123 - logger_file -INFO - user clicked on sign in button
+2023-03-02 21:12:22,361 - logger_file -INFO - user entered email email and password password
+2023-03-02 21:16:15,525 - logger_file -INFO - user is on retail website
+2023-03-02 21:16:15,532 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 21:16:15,685 - logger_file -INFO - user clicked on sign in button
+2023-03-02 21:16:15,974 - logger_file -INFO - user entered email email and password password
+2023-03-02 21:16:16,067 - logger_file -INFO - user clicked on login button
+2023-03-02 21:16:16,342 - logger_file -INFO - user has logged in into account
+2023-03-02 21:18:34,892 - logger_file -INFO - user is on retail website
+2023-03-02 21:18:34,897 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 21:18:35,028 - logger_file -INFO - user clicked on sign in button
+2023-03-02 21:18:35,294 - logger_file -INFO - user entered email email and password password
+2023-03-02 21:18:35,391 - logger_file -INFO - user clicked on login button
+2023-03-02 21:18:35,669 - logger_file -INFO - user has logged in into account
+2023-03-02 21:18:35,824 - logger_file -INFO - user clicked on account option
+2023-03-02 21:18:36,534 - logger_file -INFO - user updated name and phone
+2023-03-02 21:18:36,641 - logger_file -INFO - user clicked on udpate button
+2023-03-02 21:18:37,331 - logger_file -INFO - user profile information has been updated
+2023-03-02 21:22:37,293 - logger_file -INFO - user is on retail website
+2023-03-02 21:22:37,298 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 21:22:37,452 - logger_file -INFO - user clicked on all section button
+2023-03-02 21:22:37,528 - logger_file -INFO - Electronics equals Electronics
+2023-03-02 21:22:37,597 - logger_file -INFO - Computers equals Computers
+2023-03-02 21:22:37,643 - logger_file -INFO - Smart Home equals Smart Home
+2023-03-02 21:22:37,683 - logger_file -INFO - Sports equals Sports
+2023-03-02 21:22:37,723 - logger_file -INFO - Automative equals Automative
+2023-03-02 21:28:11,354 - logger_file -INFO - user is on retail website
+2023-03-02 21:28:11,359 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 21:28:11,482 - logger_file -INFO - user clicked on sign in button
+2023-03-02 21:28:11,760 - logger_file -INFO - user entered email email and password password
+2023-03-02 21:28:11,858 - logger_file -INFO - user clicked on login button
+2023-03-02 21:28:12,132 - logger_file -INFO - user has logged in into account
+2023-03-02 21:28:12,296 - logger_file -INFO - user clicked on account option
+2023-03-02 21:28:12,658 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 21:28:12,743 - logger_file -INFO - user clicked on change password button
+2023-03-02 21:28:13,689 - logger_file -INFO - Password Updated Successfully
+2023-03-02 21:36:51,036 - logger_file -INFO - user is on retail website
+2023-03-02 21:36:51,041 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 21:36:51,152 - logger_file -INFO - user clicked on sign in button
+2023-03-02 21:36:51,350 - logger_file -INFO - user entered email email and password password
+2023-03-02 21:36:51,415 - logger_file -INFO - user clicked on login button
+2023-03-02 21:37:23,835 - logger_file -INFO - user is on retail website
+2023-03-02 21:37:23,841 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 21:37:23,921 - logger_file -INFO - user clicked on sign in button
+2023-03-02 21:37:24,119 - logger_file -INFO - user entered email email and password password
+2023-03-02 21:37:24,183 - logger_file -INFO - user clicked on login button
+2023-03-02 21:37:24,444 - logger_file -INFO - user has logged in into account
+2023-03-02 21:37:24,558 - logger_file -INFO - user clicked on account option
+2023-03-02 21:37:24,831 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 21:37:24,892 - logger_file -INFO - user clicked on change password button
+2023-03-02 21:37:25,811 - logger_file -INFO - Password Updated Successfully
+2023-03-02 21:37:35,840 - logger_file -INFO - user is on retail website
+2023-03-02 21:37:35,843 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 21:37:35,938 - logger_file -INFO - user clicked on sign in button
+2023-03-02 21:37:36,147 - logger_file -INFO - user entered email email and password password
+2023-03-02 21:37:36,210 - logger_file -INFO - user clicked on login button
+2023-03-02 21:42:19,923 - logger_file -INFO - user is on retail website
+2023-03-02 21:42:19,928 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 21:42:20,007 - logger_file -INFO - user clicked on sign in button
+2023-03-02 21:42:20,187 - logger_file -INFO - user entered email email and password password
+2023-03-02 21:46:54,457 - logger_file -INFO - user is on retail website
+2023-03-02 21:46:54,462 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 21:46:54,559 - logger_file -INFO - user clicked on sign in button
+2023-03-02 21:46:54,771 - logger_file -INFO - user entered email email and password password
+2023-03-02 21:46:54,836 - logger_file -INFO - user clicked on login button
+2023-03-02 21:46:55,101 - logger_file -INFO - user has logged in into account
+2023-03-02 21:46:55,222 - logger_file -INFO - user clicked on account option
+2023-03-02 21:46:55,485 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 21:46:55,546 - logger_file -INFO - user clicked on change password button
+2023-03-02 21:46:56,472 - logger_file -INFO - Password Updated Successfully
+2023-03-02 21:47:04,851 - logger_file -INFO - user is on retail website
+2023-03-02 21:47:04,855 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 21:47:04,958 - logger_file -INFO - user clicked on sign in button
+2023-03-02 21:47:05,155 - logger_file -INFO - user entered email email and password password
+2023-03-02 21:47:05,224 - logger_file -INFO - user clicked on login button
+2023-03-02 21:58:43,154 - logger_file -INFO - user is on retail website
+2023-03-02 21:58:43,157 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 21:58:43,280 - logger_file -INFO - user clicked on sign in button
+2023-03-02 21:58:43,486 - logger_file -INFO - user entered email email and password password
+2023-03-02 21:58:43,550 - logger_file -INFO - user clicked on login button
+2023-03-02 21:59:05,367 - logger_file -INFO - user is on retail website
+2023-03-02 21:59:05,370 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 21:59:05,479 - logger_file -INFO - user clicked on sign in button
+2023-03-02 21:59:05,673 - logger_file -INFO - user entered email email and password password
+2023-03-02 21:59:05,743 - logger_file -INFO - user clicked on login button
+2023-03-02 21:59:06,018 - logger_file -INFO - user has logged in into account
+2023-03-02 21:59:06,132 - logger_file -INFO - user clicked on account option
+2023-03-02 21:59:06,409 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 21:59:06,475 - logger_file -INFO - user clicked on change password button
+2023-03-02 22:03:23,430 - logger_file -INFO - user is on retail website
+2023-03-02 22:03:23,433 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 22:03:23,530 - logger_file -INFO - user clicked on sign in button
+2023-03-02 22:03:23,720 - logger_file -INFO - user entered email email and password password
+2023-03-02 22:03:23,784 - logger_file -INFO - user clicked on login button
+2023-03-02 22:03:24,046 - logger_file -INFO - user has logged in into account
+2023-03-02 22:03:24,161 - logger_file -INFO - user clicked on account option
+2023-03-02 22:03:24,432 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 22:03:24,500 - logger_file -INFO - user clicked on change password button
+2023-03-02 22:03:25,428 - logger_file -INFO - Password Updated Successfully
+2023-03-02 22:13:20,253 - logger_file -INFO - user is on retail website
+2023-03-02 22:13:20,257 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 22:13:20,354 - logger_file -INFO - user clicked on sign in button
+2023-03-02 22:13:20,538 - logger_file -INFO - user entered email email and password password
+2023-03-02 22:13:20,599 - logger_file -INFO - user clicked on login button
+2023-03-02 22:13:40,079 - logger_file -INFO - user is on retail website
+2023-03-02 22:13:40,083 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 22:13:40,165 - logger_file -INFO - user clicked on sign in button
+2023-03-02 22:13:40,356 - logger_file -INFO - user entered email email and password password
+2023-03-02 22:13:40,416 - logger_file -INFO - user clicked on login button
+2023-03-02 22:13:40,691 - logger_file -INFO - user has logged in into account
+2023-03-02 22:13:40,802 - logger_file -INFO - user clicked on account option
+2023-03-02 22:13:41,090 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 22:13:41,150 - logger_file -INFO - user clicked on change password button
+2023-03-02 22:13:42,100 - logger_file -INFO - Password Updated Successfully
+2023-03-02 22:13:50,653 - logger_file -INFO - user is on retail website
+2023-03-02 22:13:50,656 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 22:13:50,736 - logger_file -INFO - user clicked on sign in button
+2023-03-02 22:13:50,925 - logger_file -INFO - user entered email email and password password
+2023-03-02 22:13:50,987 - logger_file -INFO - user clicked on login button
+2023-03-02 22:16:59,733 - logger_file -INFO - user is on retail website
+2023-03-02 22:16:59,739 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 22:16:59,832 - logger_file -INFO - user clicked on sign in button
+2023-03-02 22:17:00,076 - logger_file -INFO - user entered email email and password password
+2023-03-02 22:17:00,146 - logger_file -INFO - user clicked on login button
+2023-03-02 22:17:00,420 - logger_file -INFO - user has logged in into account
+2023-03-02 22:17:00,533 - logger_file -INFO - user clicked on account option
+2023-03-02 22:17:00,805 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 22:17:00,864 - logger_file -INFO - user clicked on change password button
+2023-03-02 22:17:01,854 - logger_file -INFO - Password Updated Successfully
+2023-03-02 22:17:11,289 - logger_file -INFO - user is on retail website
+2023-03-02 22:17:11,292 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 22:17:11,392 - logger_file -INFO - user clicked on sign in button
+2023-03-02 22:17:11,584 - logger_file -INFO - user entered email email and password password
+2023-03-02 22:17:11,649 - logger_file -INFO - user clicked on login button
+2023-03-02 22:29:16,009 - logger_file -INFO - user is on retail website
+2023-03-02 22:29:16,012 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 22:29:16,113 - logger_file -INFO - user clicked on sign in button
+2023-03-02 22:29:16,308 - logger_file -INFO - user entered email email and password password
+2023-03-02 22:29:16,375 - logger_file -INFO - user clicked on login button
+2023-03-02 22:29:31,326 - logger_file -INFO - user is on retail website
+2023-03-02 22:29:31,332 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 22:29:31,426 - logger_file -INFO - user clicked on sign in button
+2023-03-02 22:29:31,616 - logger_file -INFO - user entered email email and password password
+2023-03-02 22:29:31,687 - logger_file -INFO - user clicked on login button
+2023-03-02 22:29:31,960 - logger_file -INFO - user has logged in into account
+2023-03-02 22:29:32,072 - logger_file -INFO - user clicked on account option
+2023-03-02 22:29:32,351 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 22:29:32,414 - logger_file -INFO - user clicked on change password button
+2023-03-02 22:29:33,335 - logger_file -INFO - Password Updated Successfully
+2023-03-02 22:29:43,459 - logger_file -INFO - user is on retail website
+2023-03-02 22:29:43,463 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 22:29:43,559 - logger_file -INFO - user clicked on sign in button
+2023-03-02 22:29:43,757 - logger_file -INFO - user entered email email and password password
+2023-03-02 22:29:43,822 - logger_file -INFO - user clicked on login button
+2023-03-02 22:52:30,297 - logger_file -INFO - user is on retail website
+2023-03-02 22:52:30,302 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 22:52:30,429 - logger_file -INFO - user clicked on sign in button
+2023-03-02 22:52:30,639 - logger_file -INFO - user entered email email and password password
+2023-03-02 22:52:30,709 - logger_file -INFO - user clicked on login button
+2023-03-02 22:54:13,753 - logger_file -INFO - user is on retail website
+2023-03-02 22:54:13,761 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 22:54:13,844 - logger_file -INFO - user clicked on sign in button
+2023-03-02 22:54:14,041 - logger_file -INFO - user entered email email and password password
+2023-03-02 22:54:14,105 - logger_file -INFO - user clicked on login button
+2023-03-02 22:55:52,008 - logger_file -INFO - user is on retail website
+2023-03-02 22:55:52,015 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 22:55:52,198 - logger_file -INFO - user clicked on sign in button
+2023-03-02 22:55:52,563 - logger_file -INFO - user entered email email and password password
+2023-03-02 22:55:52,672 - logger_file -INFO - user clicked on login button
+2023-03-02 22:55:52,912 - logger_file -INFO - user has logged in into account
+2023-03-02 22:55:53,058 - logger_file -INFO - user clicked on account option
+2023-03-02 22:55:53,487 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 22:55:53,587 - logger_file -INFO - user clicked on change password button
+2023-03-02 22:55:54,541 - logger_file -INFO - Password Updated Successfully
+2023-03-02 22:56:04,545 - logger_file -INFO - user is on retail website
+2023-03-02 22:56:04,552 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 22:56:04,724 - logger_file -INFO - user clicked on sign in button
+2023-03-02 22:56:05,069 - logger_file -INFO - user entered email email and password password
+2023-03-02 22:56:05,177 - logger_file -INFO - user clicked on login button
+2023-03-02 23:03:15,489 - logger_file -INFO - user is on retail website
+2023-03-02 23:03:15,494 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 23:03:15,629 - logger_file -INFO - user clicked on sign in button
+2023-03-02 23:03:15,931 - logger_file -INFO - user entered email email and password password
+2023-03-02 23:03:16,029 - logger_file -INFO - user clicked on login button
+2023-03-02 23:04:55,240 - logger_file -INFO - user is on retail website
+2023-03-02 23:04:55,244 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 23:04:55,382 - logger_file -INFO - user clicked on sign in button
+2023-03-02 23:04:55,742 - logger_file -INFO - user entered email email and password password
+2023-03-02 23:04:55,857 - logger_file -INFO - user clicked on login button
+2023-03-02 23:04:56,136 - logger_file -INFO - user has logged in into account
+2023-03-02 23:04:56,332 - logger_file -INFO - user clicked on account option
+2023-03-02 23:04:56,709 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 23:04:56,806 - logger_file -INFO - user clicked on change password button
+2023-03-02 23:08:12,444 - logger_file -INFO - user is on retail website
+2023-03-02 23:08:12,449 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 23:08:12,591 - logger_file -INFO - user clicked on sign in button
+2023-03-02 23:08:12,901 - logger_file -INFO - user entered email email and password password
+2023-03-02 23:08:12,999 - logger_file -INFO - user clicked on login button
+2023-03-02 23:08:13,276 - logger_file -INFO - user has logged in into account
+2023-03-02 23:08:13,447 - logger_file -INFO - user clicked on account option
+2023-03-02 23:08:13,834 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 23:08:13,922 - logger_file -INFO - user clicked on change password button
+2023-03-02 23:09:20,624 - logger_file -INFO - user is on retail website
+2023-03-02 23:09:20,630 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 23:09:20,779 - logger_file -INFO - user clicked on sign in button
+2023-03-02 23:09:21,092 - logger_file -INFO - user entered email email and password password
+2023-03-02 23:09:21,200 - logger_file -INFO - user clicked on login button
+2023-03-02 23:11:26,543 - logger_file -INFO - user is on retail website
+2023-03-02 23:11:26,548 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 23:11:26,671 - logger_file -INFO - user clicked on sign in button
+2023-03-02 23:11:26,984 - logger_file -INFO - user entered email email and password password
+2023-03-02 23:11:27,089 - logger_file -INFO - user clicked on login button
+2023-03-02 23:11:27,322 - logger_file -INFO - user has logged in into account
+2023-03-02 23:11:27,479 - logger_file -INFO - user clicked on account option
+2023-03-02 23:11:27,890 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 23:11:27,985 - logger_file -INFO - user clicked on change password button
+2023-03-02 23:11:28,927 - logger_file -INFO - Password Updated Successfully
+2023-03-02 23:11:38,536 - logger_file -INFO - user is on retail website
+2023-03-02 23:11:38,540 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 23:11:38,662 - logger_file -INFO - user clicked on sign in button
+2023-03-02 23:11:38,975 - logger_file -INFO - user entered email email and password password
+2023-03-02 23:11:39,075 - logger_file -INFO - user clicked on login button
+2023-03-02 23:12:54,264 - logger_file -INFO - user is on retail website
+2023-03-02 23:12:54,269 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 23:12:54,423 - logger_file -INFO - user clicked on sign in button
+2023-03-02 23:12:54,804 - logger_file -INFO - user entered email email and password password
+2023-03-02 23:12:54,914 - logger_file -INFO - user clicked on login button
+2023-03-02 23:12:55,189 - logger_file -INFO - user has logged in into account
+2023-03-02 23:12:55,342 - logger_file -INFO - user clicked on account option
+2023-03-02 23:12:55,751 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 23:12:55,851 - logger_file -INFO - user clicked on change password button
+2023-03-02 23:13:21,584 - logger_file -INFO - user is on retail website
+2023-03-02 23:13:21,590 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 23:13:21,782 - logger_file -INFO - user clicked on sign in button
+2023-03-02 23:13:22,088 - logger_file -INFO - user entered email email and password password
+2023-03-02 23:13:22,187 - logger_file -INFO - user clicked on login button
+2023-03-02 23:13:22,461 - logger_file -INFO - user has logged in into account
+2023-03-02 23:13:22,604 - logger_file -INFO - user clicked on account option
+2023-03-02 23:13:22,997 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 23:13:23,091 - logger_file -INFO - user clicked on change password button
+2023-03-02 23:13:24,037 - logger_file -INFO - Password Updated Successfully
+2023-03-02 23:13:34,717 - logger_file -INFO - user is on retail website
+2023-03-02 23:13:34,721 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 23:13:34,854 - logger_file -INFO - user clicked on sign in button
+2023-03-02 23:13:35,161 - logger_file -INFO - user entered email email and password password
+2023-03-02 23:13:35,256 - logger_file -INFO - user clicked on login button
+2023-03-02 23:17:32,870 - logger_file -INFO - user is on retail website
+2023-03-02 23:17:32,880 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 23:17:33,024 - logger_file -INFO - user clicked on sign in button
+2023-03-02 23:17:33,342 - logger_file -INFO - user entered email email and password password
+2023-03-02 23:17:33,448 - logger_file -INFO - user clicked on login button
+2023-03-02 23:17:33,730 - logger_file -INFO - user has logged in into account
+2023-03-02 23:17:33,927 - logger_file -INFO - user clicked on account option
+2023-03-02 23:17:34,314 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 23:17:34,404 - logger_file -INFO - user clicked on change password button
+2023-03-02 23:17:35,785 - logger_file -INFO - Password Updated Successfully
+2023-03-02 23:17:50,150 - logger_file -INFO - user is on retail website
+2023-03-02 23:17:50,155 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 23:17:50,327 - logger_file -INFO - user clicked on sign in button
+2023-03-02 23:17:50,633 - logger_file -INFO - user entered email email and password password
+2023-03-02 23:17:50,741 - logger_file -INFO - user clicked on login button
+2023-03-02 23:19:46,669 - logger_file -INFO - user is on retail website
+2023-03-02 23:19:46,675 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 23:19:46,863 - logger_file -INFO - user clicked on sign in button
+2023-03-02 23:19:47,173 - logger_file -INFO - user entered email email and password password
+2023-03-02 23:19:47,285 - logger_file -INFO - user clicked on login button
+2023-03-02 23:32:39,389 - logger_file -INFO - user is on retail website
+2023-03-02 23:32:39,396 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-02 23:32:39,552 - logger_file -INFO - user clicked on sign in button
+2023-03-02 23:32:39,882 - logger_file -INFO - user entered email email and password password
+2023-03-02 23:32:39,989 - logger_file -INFO - user clicked on login button
+2023-03-02 23:32:40,258 - logger_file -INFO - user has logged in into account
+2023-03-02 23:32:40,433 - logger_file -INFO - user clicked on account option
+2023-03-02 23:32:40,855 - logger_file -INFO - user entered previous and new passwords
+2023-03-02 23:32:40,948 - logger_file -INFO - user clicked on change password button
+2023-03-02 23:32:41,837 - logger_file -INFO - Password Updated Successfully

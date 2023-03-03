@@ -51,9 +51,9 @@ public class RetailAccountSteps extends BrowserUtilities{
 	@And("User enter below information")
 	public void userEnterBelowInfo(DataTable dataTable) {
 		List<Map<String, String>> accountInfo = dataTable.asMaps(String.class, String.class);
-		sendText(factory.accountPage().previousPasswordField, accountInfo.get(0).get("previousPassword"));
-		sendText(factory.accountPage().newPasswordField, accountInfo.get(0).get("newPassword"));
-		sendText(factory.accountPage().confirmPassField, accountInfo.get(0).get("confirmPassword"));
+		sendText(factory.accountPage().previousPasswordField, DataGenerator.getCredentials(accountInfo.get(0).get("previousPassword")));
+		sendText(factory.accountPage().newPasswordField, DataGenerator.getCredentials(accountInfo.get(0).get("newPassword")));
+		sendText(factory.accountPage().confirmPassField, DataGenerator.getCredentials(accountInfo.get(0).get("confirmPassword")));
 		logger.info("user entered previous and new passwords");
 	}
 	

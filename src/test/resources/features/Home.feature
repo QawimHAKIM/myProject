@@ -29,7 +29,7 @@ Feature: Retail Home Page
   Scenario: Verify User can add an item to cart
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'test12345@outlook.com' and password 'Test@1234567'
+    And User enter email 'email' and password 'password'
     And User click on login button
     And User should be logged in into Account
     And User change the category to 'Smart Home'
@@ -43,7 +43,7 @@ Feature: Retail Home Page
   @home4
   Scenario: Verify User can place an order without Shipping address and payment Method on file
     When User click on Sign in option
-    And User enter email 'test12345@outlook.com' and password 'Test@1234567'
+    And User enter email 'email' and password 'password'
     And User click on login button
     And User should be logged in into Account
     And User change the category to 'Smart Home'
@@ -71,7 +71,7 @@ Feature: Retail Home Page
 	@home5
   Scenario: Verify User can place an order with Shipping address and payment Method on file
     When User click on Sign in option
-    And User enter email 'test12345@outlook.com' and password 'Test@1234567'
+    And User enter email 'email' and password 'password'
     And User click on login button
     And User should be logged in into Account
     And User change the category to 'Electronics'

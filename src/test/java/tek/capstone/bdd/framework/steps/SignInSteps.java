@@ -37,8 +37,8 @@ public class SignInSteps extends BrowserUtilities {
 	
 	@And("User enter email {string} and password {string}")
 	public void userEnterEmailAndPassword(String email, String password) {
-		sendText(factory.signInPage().emailField, email);
-		sendText(factory.signInPage().passwordField, password);
+		sendText(factory.signInPage().emailField, DataGenerator.getCredentials(email));
+		sendText(factory.signInPage().passwordField, DataGenerator.getCredentials(password));
 		logger.info("user entered email " + email + " and password " + password);
 	}
 	

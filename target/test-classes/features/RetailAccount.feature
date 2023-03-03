@@ -1,10 +1,9 @@
-
 Feature: Retail Account Page
 
   Background: 
     Given User is on retail website
     When User click on Sign in option
-    And User enter email 'test12345@outlook.com' and password 'Test@123456'
+    And User enter email 'email' and password 'password'
     And User click on login button
     And User should be logged in into Account
     When User click on Account option
@@ -65,6 +64,6 @@ Feature: Retail Account Page
   Scenario: Verify User can Update password
     And User enter below information
       | previousPassword | newPassword | confirmPassword |
-      | Test@1234567     | Test@123456 | Test@123456     |
+      | password         | newPassword | newPassword     |
     And User click on Change Password button
     Then a message should be displayed ‘Password Updated Successfully’

@@ -7,8 +7,7 @@ public class DataGenerator {
 	public static String data(String input) {
 		Faker faker = new Faker();
 		String output = "";
-		String card = "";
-		String password = "";
+
 		if (input.equals("firstName")) {
 			output = faker.name().firstName();
 		} else if (input.equals("lastName")) {
@@ -34,4 +33,31 @@ public class DataGenerator {
 		}
 		return output;
 	}
+
+	public static String getCredentials(String input) {
+		String email;
+		String res = "";
+		String temp = "Test@123456";
+		String temp2 = "Test@1234567";
+		
+
+		if (input.equals("email")) {
+			email = "test12345@outlook.com";
+			res = email;
+		} else if (input.equals("password") || input.equals("previousPassword")) {
+			res = temp;
+		} else if (input.equals("newPassword") || input.equals("confirmPassword")) {
+			res = temp2;
+		}
+		return res;
+
+	}
+
+	public static String swapPasswords(String a, String b) {
+		String temp = a;
+		a = b;
+		b = temp;
+		return a; 
+	}
+
 }
