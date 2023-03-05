@@ -3,7 +3,7 @@ package tek.capstone.bdd.framework.utilities;
 import net.datafaker.Faker;
 
 public class DataGenerator {
-
+	
 	public static String data(String input) {
 		Faker faker = new Faker();
 		String output = "";
@@ -35,19 +35,20 @@ public class DataGenerator {
 	}
 
 	public static String getCredentials(String input) {
-		String email;
+
+		String email = "test12345@outlook.com";
 		String res = "";
-		String temp = "Test@123456";
-		String temp2 = "Test@1234567";
-		
+		String password = "Test@1234567";
+		String newPassword = "Test@123456";
 
 		if (input.equals("email")) {
-			email = "test12345@outlook.com";
 			res = email;
 		} else if (input.equals("password") || input.equals("previousPassword")) {
-			res = temp;
+			res = password;
+
 		} else if (input.equals("newPassword") || input.equals("confirmPassword")) {
-			res = temp2;
+			res = newPassword;
+
 		}
 		return res;
 
