@@ -5,7 +5,7 @@ Feature: Sign In Feature
     Given User is on retail website
     When User click on Sign in option
 
-	@signIn1
+  @signIn1
   Scenario: Verify user can sign in into Retail Application
     And User enter email "email" and password "password"
     And User click on login button
