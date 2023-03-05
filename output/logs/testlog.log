@@ -5365,3 +5365,11 @@
 2023-03-03 13:27:59,651 - logger_file -INFO - user filled the signUp information form
 2023-03-03 13:27:59,704 - logger_file -INFO - user has clicked on signUp button
 2023-03-03 13:28:00,102 - logger_file -INFO - user has logged into account page
+2023-03-05 12:45:54,518 - logger_file -INFO - user is on retail website
+2023-03-05 12:45:54,524 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-05 12:45:54,645 - logger_file -INFO - user clicked on all section button
+2023-03-05 12:45:54,704 - logger_file -INFO - Electronics equals Electronics
+2023-03-05 12:45:54,740 - logger_file -INFO - Computers equals Computers
+2023-03-05 12:45:54,777 - logger_file -INFO - Smart Home equals Smart Home
+2023-03-05 12:45:54,814 - logger_file -INFO - Sports equals Sports
+2023-03-05 12:45:54,841 - logger_file -INFO - Automative equals Automative
