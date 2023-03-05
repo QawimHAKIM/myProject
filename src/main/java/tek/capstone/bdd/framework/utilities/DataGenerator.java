@@ -52,12 +52,4 @@ public class DataGenerator {
 		return res;
 
 	}
-
-	public static String swapPasswords(String a, String b) {
-		String temp = a;
-		a = b;
-		b = temp;
-		return a; 
-	}
-
 }
