@@ -38,8 +38,8 @@ public class DataGenerator {
 
 		String email = "test12345@outlook.com";
 		String res = "";
-		String password = "Test@1234567";
-		String newPassword = "Test@123456";
+		String password = "Test@123456";
+		String newPassword = "Test@123457";
 
 		if (input.equals("email")) {
 			res = email;
