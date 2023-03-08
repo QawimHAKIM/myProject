@@ -36,10 +36,10 @@ public class DataGenerator {
 
 	public static String getCredentials(String input) {
 
-		String email = "test12345@outlook.com";
+		String email = "test123@yahoo.com";
 		String res = "";
-		String password = "Test@123456";
-		String newPassword = "Test@123457";
+		String password = "Test@123";
+		String newPassword = "Test@1234";
 
 		if (input.equals("email")) {
 			res = email;
