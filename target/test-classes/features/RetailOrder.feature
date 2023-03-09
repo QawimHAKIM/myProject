@@ -1,4 +1,4 @@
-@jenkins
+@Order
 Feature: Retail Order Page
 
   Background: 
