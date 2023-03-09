@@ -1,4 +1,4 @@
-@jenkins
+@Home
 Feature: Retail Home Page
 
   Background: 
