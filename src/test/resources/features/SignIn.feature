@@ -5,13 +5,13 @@ Feature: Sign In Feature
     Given User is on retail website
     When User click on Sign in option
 
-  @signIn1
+  @signIn
   Scenario: Verify user can sign in into Retail Application
     And User enter email "email" and password "password"
     And User click on login button
     Then User should be logged in into Account
 
-  @signIn2
+  @signIn
   Scenario: Verify user can create an account into Retail Website
     And User click on Create New Account button
     And User fill the signUp information with below data

@@ -8,7 +8,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		tags = "@signIn1",
+		tags = "@signIn",
 		features = ("classpath:features"),
 		glue = "tek.capstone.bdd.framework",
 		dryRun = false,
