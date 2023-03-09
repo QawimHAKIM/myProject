@@ -112,7 +112,13 @@ public class HomeSteps extends BrowserUtilities {
 	}
 	
 	@Then("the cart icon quantity should change to {string}")
-	public void theCartIconShouldChange(String cartIcon) {
+	public void theCartIconShouldChange(String cartIcon){
+		click(factory.homePage().cartBtn);
+		if(!(factory.homePage().cartQuantityImg.getText().equals("5"))) {
+		sendAndRemove(factory.homePage().qty);
+		getWait();
+		waitTillTextChange(factory.homePage().cartQuantityImg);
+		}
 		Assert.assertEquals(factory.homePage().cartQuantityImg.getText(), cartIcon);
 		logger.info("cart icon has been updated to " + cartIcon);
 	}

@@ -101,7 +101,11 @@ public class RetailHomePage extends BaseSetup{
 	@FindBy(xpath = "//img[@alt='Apex Legends - 1,000 Apex Coins']")
 	public WebElement apexLegends;
 	
+	@FindBy(xpath = "//span[@class='cart__item-delete']")
+	public List<WebElement> deleteBtn;
 	
+	@FindBy(xpath = "//input[@type='number']")
+	public WebElement qty;
 	
 	
 	

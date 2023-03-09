@@ -47,6 +47,10 @@ public class BrowserUtilities extends BaseSetup{
 		return this.getWait().until(ExpectedConditions.visibilityOfElementLocated(by));
 	}
 	
+	public boolean waitTillTextChange(WebElement element) {
+		return this.getWait().until(ExpectedConditions.textToBePresentInElement(element, "2"));
+	}
+	
 	public void click(WebElement element) {
 		this.waitTillClickable(element).click();
 	}
@@ -217,10 +221,10 @@ public class BrowserUtilities extends BaseSetup{
 		element.clear();	
 	}
 	
-	public void selectAndRemove(WebElement element) {
+	public void sendAndRemove(WebElement element) {
 		Actions action = new Actions(getDriver());
 		action.doubleClick(element).perform();
-		action.sendKeys(Keys.BACK_SPACE).perform();
+		action.sendKeys(element, "2").perform();;
 	}
 	
 }

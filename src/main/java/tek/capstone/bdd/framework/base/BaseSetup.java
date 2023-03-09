@@ -23,7 +23,7 @@ public class BaseSetup {
 	public static Logger logger;
 
 	public BaseSetup() {
-		String filePath = System.getProperty("user.dir") + "/src/main/resources/env_config2.yaml";
+		String filePath = System.getProperty("user.dir") + "/src/main/resources/env_config2.yml";
 		String log4jPath = System.getProperty("user.dir") + "/src/main/resources/log4j.properties";
 
 		try {
