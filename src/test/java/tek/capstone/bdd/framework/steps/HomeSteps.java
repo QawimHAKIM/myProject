@@ -113,6 +113,9 @@ public class HomeSteps extends BrowserUtilities {
 	
 	@Then("the cart icon quantity should change to {string}")
 	public void theCartIconShouldChange(String cartIcon){
+		// In here I need to change the cartQuantity number to two otherwise
+		// for the next scenario the product will quantity will be 4 which will fail
+		// the test case.
 		click(factory.homePage().cartBtn);
 		if(!(factory.homePage().cartQuantityImg.getText().equals("5"))) {
 		sendAndRemove(factory.homePage().qty);

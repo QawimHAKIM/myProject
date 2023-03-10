@@ -225,6 +225,8 @@ public class BrowserUtilities extends BaseSetup{
 		Actions action = new Actions(getDriver());
 		action.doubleClick(element).perform();
 		action.sendKeys(element, "2").perform();;
+//		action.sendKeys(element, Keys.ARROW_LEFT);
+//		action.sendKeys(element, Keys.BACK_SPACE);
 	}
 	
 }
