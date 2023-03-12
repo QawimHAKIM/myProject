@@ -15,6 +15,14 @@ Feature: Retail Account Page
     And User click on Update button
     Then user profile information should be updated
 
+  @account2
+  Scenario: Verify User can Update password
+    And User enter below information
+      | previousPassword | newPassword | confirmPassword |
+      | password         | newPassword | newPassword     |
+    And User click on Change Password button
+    Then a message should be displayed ‘Password Updated Successfully’
+
   @account3
   Scenario: Verify User can add a payment method
     And User click on Add a payment method link
@@ -60,11 +68,3 @@ Feature: Retail Account Page
   Scenario: Verify User can remove Address from Account
     And User click on remove option of Address section
     Then Address details should be removed
-
-  #@account2
-  #Scenario: Verify User can Update password
-    #And User enter below information
-      #| previousPassword | newPassword | confirmPassword |
-      #| password         | newPassword | newPassword     |
-    #And User click on Change Password button
-    #Then a message should be displayed ‘Password Updated Successfully’

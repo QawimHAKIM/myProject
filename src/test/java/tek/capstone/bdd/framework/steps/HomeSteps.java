@@ -112,7 +112,7 @@ public class HomeSteps extends BrowserUtilities {
 	}
 	
 	@Then("the cart icon quantity should change to {string}")
-	public void theCartIconShouldChange(String cartIcon) throws InterruptedException{
+	public void theCartIconShouldChange(String cartIcon){
 		// In here I need to change the cartQuantity number to two otherwise
 		// for the next scenario the product quantity will become 4 which will fail
 		// the test case.
