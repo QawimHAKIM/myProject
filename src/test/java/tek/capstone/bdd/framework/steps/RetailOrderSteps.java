@@ -64,12 +64,16 @@ public class RetailOrderSteps extends BrowserUtilities {
 	// 2
 	@And("User click on Return Items button")
 	public void userClickOnReturnItemsButton() {
+		/** for this scenario we need to iterate through the items and find an item which has
+		 *   Return option otherwise if we click the first item which is already cancelled in
+		 *   previous scenario and it will not have a return option, thus, fails the test case
+		 */
 		List<WebElement> orders = factory.orderPage().orders;
 		for (WebElement e : orders) {
 			click(e);
-//			if(isElementDisplayed(factory.orderPage().returnBtn)) {
-//				break;
-//			}
+			if(isElementDisplayed(factory.orderPage().returnBtn)) {
+				break;
+			}
 		}
 		click(factory.orderPage().returnBtn);
 		logger.info("user clicked on return item button");
