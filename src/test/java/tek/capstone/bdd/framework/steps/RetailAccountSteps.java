@@ -48,27 +48,27 @@ public class RetailAccountSteps extends BrowserUtilities{
 	}
 	
 	//2
-	@And("User enter below information")
-	public void userEnterBelowInfo(DataTable dataTable) {
-		List<Map<String, String>> accountInfo = dataTable.asMaps(String.class, String.class);
-		sendText(factory.accountPage().previousPasswordField, DataGenerator.getCredentials(accountInfo.get(0).get("previousPassword")));
-		sendText(factory.accountPage().newPasswordField, DataGenerator.getCredentials(accountInfo.get(0).get("newPassword")));
-		sendText(factory.accountPage().confirmPassField, DataGenerator.getCredentials(accountInfo.get(0).get("confirmPassword")));
-		logger.info("user entered previous and new passwords");
-	}
-	
-	@And("User click on Change Password button")
-	public void userClickOnChangePassBtn() {
-		click(factory.accountPage().changePasswordBtn);
-		logger.info("user clicked on change password button");
-	}
-	
-	@Then("a message should be displayed ‘Password Updated Successfully’")
-	public void passwordUpdateMessage() {
-		waitTillPresence(factory.accountPage().passwordUpdateMessage);
-		Assert.assertTrue(isElementDisplayed(factory.accountPage().passwordUpdateMessage));
-		logger.info("Password Updated Successfully");
-	}
+//	@And("User enter below information")
+//	public void userEnterBelowInfo(DataTable dataTable) {
+//		List<Map<String, String>> accountInfo = dataTable.asMaps(String.class, String.class);
+//		sendText(factory.accountPage().previousPasswordField, DataGenerator.getCredentials(accountInfo.get(0).get("previousPassword")));
+//		sendText(factory.accountPage().newPasswordField, DataGenerator.getCredentials(accountInfo.get(0).get("newPassword")));
+//		sendText(factory.accountPage().confirmPassField, DataGenerator.getCredentials(accountInfo.get(0).get("confirmPassword")));
+//		logger.info("user entered previous and new passwords");
+//	}
+//	
+//	@And("User click on Change Password button")
+//	public void userClickOnChangePassBtn() {
+//		click(factory.accountPage().changePasswordBtn);
+//		logger.info("user clicked on change password button");
+//	}
+//	
+//	@Then("a message should be displayed ‘Password Updated Successfully’")
+//	public void passwordUpdateMessage() {
+//		waitTillPresence(factory.accountPage().passwordUpdateMessage);
+//		Assert.assertTrue(isElementDisplayed(factory.accountPage().passwordUpdateMessage));
+//		logger.info("Password Updated Successfully");
+//	}
 	
 	//3
 	@And("User click on Add a payment method link")

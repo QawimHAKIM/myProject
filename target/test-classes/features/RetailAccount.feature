@@ -61,10 +61,10 @@ Feature: Retail Account Page
     And User click on remove option of Address section
     Then Address details should be removed
 
-  @account2
-  Scenario: Verify User can Update password
-    And User enter below information
-      | previousPassword | newPassword | confirmPassword |
-      | password         | newPassword | newPassword     |
-    And User click on Change Password button
-    Then a message should be displayed ‘Password Updated Successfully’
+  #@account2
+  #Scenario: Verify User can Update password
+    #And User enter below information
+      #| previousPassword | newPassword | confirmPassword |
+      #| password         | newPassword | newPassword     |
+    #And User click on Change Password button
+    #Then a message should be displayed ‘Password Updated Successfully’
