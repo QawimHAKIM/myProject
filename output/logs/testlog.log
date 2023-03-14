@@ -11436,3 +11436,36 @@
 2023-03-12 17:53:40,866 - logger_file -INFO - user clicked on Add Your card button
 2023-03-12 17:53:41,018 - logger_file -INFO - user clicked on place your order button
 2023-03-12 17:53:41,292 - logger_file -INFO - Order placed message is displayed
+2023-03-14 18:28:06,030 - logger_file -INFO - user is on retail website
+2023-03-14 18:28:06,036 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-14 18:28:06,141 - logger_file -INFO - user clicked on sign in button
+2023-03-14 18:28:06,359 - logger_file -INFO - user entered email email and password password
+2023-03-14 18:28:06,439 - logger_file -INFO - user clicked on login button
+2023-03-14 18:28:06,715 - logger_file -INFO - user has logged in into account
+2023-03-14 18:28:06,842 - logger_file -INFO - user clicked on account option
+2023-03-14 18:28:07,075 - logger_file -INFO - user clicked on edit option on address
+2023-03-14 18:28:08,546 - logger_file -INFO - user added the address information
+2023-03-14 18:28:08,647 - logger_file -INFO - user clicked on Update Your Address button
+2023-03-14 18:28:09,334 - logger_file -INFO - Address Updated Successfully message is displayed
+2023-03-14 18:31:38,858 - logger_file -INFO - user is on retail website
+2023-03-14 18:31:38,862 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-14 18:31:39,183 - logger_file -INFO - user clicked on sign in button
+2023-03-14 18:31:39,316 - logger_file -INFO - user entered email email and password password
+2023-03-14 18:31:39,572 - logger_file -INFO - user clicked on login button
+2023-03-14 18:31:39,627 - logger_file -INFO - user has logged in into account
+2023-03-14 18:31:39,939 - logger_file -INFO - user clicked on account option
+2023-03-14 18:31:40,248 - logger_file -INFO - user clicked on edit option on address
+2023-03-14 18:31:40,990 - logger_file -INFO - user added the address information
+2023-03-14 18:31:41,278 - logger_file -INFO - user clicked on Update Your Address button
+2023-03-14 18:31:41,827 - logger_file -INFO - Address Updated Successfully message is displayed
+2023-03-14 18:36:04,324 - logger_file -INFO - user is on retail website
+2023-03-14 18:36:04,329 - logger_file -INFO - actual title React App equals expected title: React App
+2023-03-14 18:36:04,435 - logger_file -INFO - user clicked on sign in button
+2023-03-14 18:36:04,627 - logger_file -INFO - user entered email email and password password
+2023-03-14 18:36:04,699 - logger_file -INFO - user clicked on login button
+2023-03-14 18:36:04,970 - logger_file -INFO - user has logged in into account
+2023-03-14 18:36:05,092 - logger_file -INFO - user clicked on account option
+2023-03-14 18:36:05,298 - logger_file -INFO - user clicked on edit option on address
+2023-03-14 18:36:06,451 - logger_file -INFO - user added the address information
+2023-03-14 18:36:06,545 - logger_file -INFO - user clicked on Update Your Address button
+2023-03-14 18:36:07,237 - logger_file -INFO - Address Updated Successfully message is displayed
