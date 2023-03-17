@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: tek.capstone.bdd.framework.runner.TestRunner
+-------------------------------------------------------------------------------
+Tests run: 21, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 95.572 s - in tek.capstone.bdd.framework.runner.TestRunner
