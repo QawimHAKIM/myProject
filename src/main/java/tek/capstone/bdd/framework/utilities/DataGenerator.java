@@ -10,8 +10,10 @@ public class DataGenerator {
 
 		if (input.equals("firstName")) {
 			output = faker.name().firstName();
+			output = output.replaceAll("[^a-zA-Z]", "");
 		} else if (input.equals("lastName")) {
 			output = faker.name().lastName();
+			output = output.replaceAll("[^a-zA-Z]", "");
 		} else if (input.equals("email")) {
 			output = faker.name().firstName() + "." + faker.name().lastName() + "@tekschool.us";
 		} else if (input.equals("phoneNumber")) {
