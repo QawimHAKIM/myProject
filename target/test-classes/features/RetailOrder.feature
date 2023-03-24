@@ -17,7 +17,7 @@ Feature: Retail Order Page
     And User click on Cancel Order button
     Then a cancelation message should be displayed 'Your Order Has Been Cancelled'
 
-  @order2
+  @order2 @smoke
   Scenario: Verify User can Return the order
     And User click on Return Items button
     And User select the Return Reason 'Item damaged'

@@ -10,7 +10,7 @@ Feature: Retail Home Page
     Then below options are present in Shop by Department sidebar
       | Electronics | Computers | Smart Home | Sports | Automative |
 
-	@home2
+	@home2 @smoke
   Scenario Outline: Verify department sidebar options
     When User click on All section
     And User on '<department>'
@@ -40,7 +40,7 @@ Feature: Retail Home Page
     And User click add to Cart button
     Then the cart icon quantity should change to '2'
 
-  @home4
+  @home4 @smoke
   Scenario: Verify User can place an order without Shipping address and payment Method on file
     When User click on Sign in option
     And User enter email 'email' and password 'password'

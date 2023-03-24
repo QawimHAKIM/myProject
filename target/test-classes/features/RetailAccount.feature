@@ -46,7 +46,7 @@ Feature: Retail Account Page
     And User click on remove option of card section
     Then payment details should be removed
 
-  @account6
+  @account6 @smoke
   Scenario: Verify User can add an Address
     And User click on Add address option
     And User fill new address form with below information
