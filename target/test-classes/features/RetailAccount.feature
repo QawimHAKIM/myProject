@@ -9,21 +9,13 @@ Feature: Retail Account Page
     And User should be logged in into Account
     When User click on Account option
 
-  @account1
+  @account1 @regression
   Scenario: Verify User can update Profile Information
     And User update Name 'firstName' and Phone 'phoneNumber'
     And User click on Update button
     Then user profile information should be updated
 
-  @account2
-  Scenario: Verify User can Update password
-    And User enter below information
-      | previousPassword | newPassword | confirmPassword |
-      | password         | newPassword | newPassword     |
-    And User click on Change Password button
-    Then a message should be displayed ‘Password Updated Successfully’
-
-  @account3
+  @account2 @regression
   Scenario: Verify User can add a payment method
     And User click on Add a payment method link
     And User fill Debit or credit card information
@@ -32,7 +24,7 @@ Feature: Retail Account Page
     And User click on Add your card button
     Then a message should be displayed ‘Payment Method added successfully’
 
-  @account4
+  @account3 @regression
   Scenario: Verify User can edit Debit or Credit card
     And User click on Edit option of card section
     And user edit information with below data
@@ -41,12 +33,12 @@ Feature: Retail Account Page
     And user click on Update Your Card button
     Then a message should be displayed ‘Payment Method updated Successfully’
 
-  @account5
+  @account4 @regression
   Scenario: Verify User can remove Debit or Credit card
     And User click on remove option of card section
     Then payment details should be removed
 
-  @account6 @smoke
+  @account5 @regression @smoke
   Scenario: Verify User can add an Address
     And User click on Add address option
     And User fill new address form with below information
@@ -55,7 +47,7 @@ Feature: Retail Account Page
     And User click Add Your Address button
     Then a message should be displayed ‘Address Added Successfully’
 
-  @account7
+  @account6 @regression
   Scenario: Verify User can edit an Address added on account
     And User click on edit address option
     And User fill new address form with below information
@@ -64,7 +56,7 @@ Feature: Retail Account Page
     And User click update Your Address button
     Then a message should be displayed Address Updated Successfully
 
-  @account8
+  @account7 @regression
   Scenario: Verify User can remove Address from Account
     And User click on remove option of Address section
     Then Address details should be removed

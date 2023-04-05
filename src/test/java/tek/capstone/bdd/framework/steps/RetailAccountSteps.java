@@ -48,29 +48,6 @@ public class RetailAccountSteps extends BrowserUtilities{
 	}
 	
 	//2
-	@And("User enter below information")
-	public void userEnterBelowInfo(DataTable dataTable) {
-		List<Map<String, String>> accountInfo = dataTable.asMaps(String.class, String.class);
-		sendText(factory.accountPage().previousPasswordField, DataGenerator.getCredentials(accountInfo.get(0).get("previousPassword")));
-		sendText(factory.accountPage().newPasswordField, DataGenerator.getCredentials(accountInfo.get(0).get("newPassword")));
-		sendText(factory.accountPage().confirmPassField, DataGenerator.getCredentials(accountInfo.get(0).get("confirmPassword")));
-		logger.info("user entered previous and new passwords");
-	}
-	
-	@And("User click on Change Password button")
-	public void userClickOnChangePassBtn() {
-		click(factory.accountPage().changePasswordBtn);
-		logger.info("user clicked on change password button");
-	}
-	
-	@Then("a message should be displayed ‘Password Updated Successfully’")
-	public void passwordUpdateMessage() {
-		waitTillPresence(factory.accountPage().passwordUpdateMessage);
-		Assert.assertTrue(isElementDisplayed(factory.accountPage().passwordUpdateMessage));
-		logger.info("Password Updated Successfully");
-	}
-	
-	//3
 	@And("User click on Add a payment method link")
 	public void userClickOnAddPaymentLink() {
 		click(factory.accountPage().addPaymentLink);
@@ -101,7 +78,7 @@ public class RetailAccountSteps extends BrowserUtilities{
 		logger.info("Payment Method added successfully message is displayed");
 	}
 	
-	//4
+	//3
 	@And("User click on Edit option of card section")
 	public void userClickOnEditOptionOfCard() {
 		click(factory.accountPage().debitOrCreditCardPicture);
@@ -136,7 +113,7 @@ public class RetailAccountSteps extends BrowserUtilities{
 		logger.info("Payment Method updated Successfully message is displayed");
 	}
 	
-	//5
+	//4
 	@And("User click on remove option of card section")
 	public void userClickOnRemoveOptionOfCard() {
 		click(factory.accountPage().debitOrCreditCardPicture);
@@ -150,7 +127,7 @@ public class RetailAccountSteps extends BrowserUtilities{
 		logger.info("payment details has been removed");
 	}
 	
-	//6
+	//5
 	@And("User click on Add address option")
 	public void userClickOnAddAddressOption() {
 		click(factory.accountPage().addAddressBox);
@@ -190,7 +167,7 @@ public class RetailAccountSteps extends BrowserUtilities{
 		logger.info("Address Added Successfully message is displayed");
 	}
 	
-	//7
+	//6
 	@And("User click on edit address option")
 	public void userClickEditOnAddress() {
 		waitTillPresence(factory.accountPage().editBtnOnAddress);
@@ -211,7 +188,7 @@ public class RetailAccountSteps extends BrowserUtilities{
 		logger.info("Address Updated Successfully message is displayed");
 	}
 	
-	//8
+	//7
 	@And("User click on remove option of Address section")
 	public void userClickRemoveOnAddress() {
 		click(factory.accountPage().removeBtnOnAddress);

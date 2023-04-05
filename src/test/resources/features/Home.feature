@@ -4,13 +4,13 @@ Feature: Retail Home Page
   Background: 
     Given User is on retail website
 
-  @home1
+  @home1 @regression
   Scenario: Verify Shop by Department sidebar
     When User click on All section
     Then below options are present in Shop by Department sidebar
       | Electronics | Computers | Smart Home | Sports | Automative |
 
-	@home2 @smoke
+	@home2 @regression @smoke
   Scenario Outline: Verify department sidebar options
     When User click on All section
     And User on '<department>'
@@ -25,7 +25,7 @@ Feature: Retail Home Page
       | Sports      | Athletic Clothing              | Exercise & Fitness       |
       | Automotive  | Automative Parts & Accessories | MotorCycle & Powersports |
 
-	@home3
+	@home3 @regression
   Scenario: Verify User can add an item to cart
     Given User is on retail website
     When User click on Sign in option
@@ -40,7 +40,7 @@ Feature: Retail Home Page
     And User click add to Cart button
     Then the cart icon quantity should change to '2'
 
-  @home4 @smoke
+  @home4 @regression @smoke
   Scenario: Verify User can place an order without Shipping address and payment Method on file
     When User click on Sign in option
     And User enter email 'email' and password 'password'
@@ -68,7 +68,7 @@ Feature: Retail Home Page
     And User click on Place Your Order
     Then a message should be displayed ‘Order Placed, Thanks’
 
-	@home5
+	@home5 @regression
   Scenario: Verify User can place an order with Shipping address and payment Method on file
     When User click on Sign in option
     And User enter email 'email' and password 'password'

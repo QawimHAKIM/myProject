@@ -1,3 +1,4 @@
+tek\capstone\bdd\framework\steps\ChangePasswordSteps.class
 tek\capstone\bdd\framework\steps\SignInSteps.class
 tek\capstone\bdd\framework\steps\RetailOrderSteps.class
 tek\capstone\bdd\framework\runner\TestRunner.class
