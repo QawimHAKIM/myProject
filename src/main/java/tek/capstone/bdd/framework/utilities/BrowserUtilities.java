@@ -221,9 +221,11 @@ public class BrowserUtilities extends BaseSetup{
 		element.clear();	
 	}
 	
-	public void sendAndRemove(WebElement element, String cartIcon){
+	public void sendRemove(WebElement element, String cart) {
 		Actions action = new Actions(getDriver());
-		action.sendKeys(element, cartIcon).perform();
+		action.doubleClick(element).perform();
+		action.sendKeys(Keys.ARROW_RIGHT).perform();
+		action.sendKeys(cart).perform();
 		action.sendKeys(Keys.ARROW_LEFT).perform();
 		action.sendKeys(Keys.BACK_SPACE).perform();
 	}

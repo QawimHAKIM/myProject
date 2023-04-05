@@ -63,130 +63,109 @@ public class HomeSteps extends BrowserUtilities {
 
 		}
 	}
-	
-	//3
+
+	// 3
 	@And("User change the category to {string}")
-	public void userChangeCategory(String category){
+	public void userChangeCategory(String category) {
 		pageLoad();
 		List<WebElement> categories = factory.homePage().homePagecategories;
-		for(WebElement element : categories) {
-			if(element.getAttribute("alt").equals(category)) {
+		for (WebElement element : categories) {
+			if (element.getAttribute("alt").equals(category)) {
 				element.click();
 				logger.info("user clicked on " + element + " category");
 				break;
 			}
 		}
-		
+
 	}
-	
+
 	@And("User search for an item {string}")
-	public void userSearchForAnItem(String item){
+	public void userSearchForAnItem(String item) {
 		sendText(factory.homePage().searchBar, item);
 		logger.info("user entered the item name");
 	}
-	
+
 	@And("User click on Search icon")
 	public void userClickOnSearchIcon() {
 		waitTillClickable(factory.homePage().searchButton);
 		click(factory.homePage().searchButton);
 		logger.info("user clicked on search icon");
 	}
-	
+
 	@And("User click on item")
 	public void userClickOnItem() {
 		waitTillPresence(factory.homePage().products);
 		click(factory.homePage().products);
 		logger.info("user clicked on product");
 	}
-	
+
 	@And("User select quantity {string}")
 	public void userSelectQuantity(String quantity) {
 		selectByVisibleText(factory.homePage().productSelectQuantity, quantity);
 		logger.info("user selected the quantity to " + quantity);
 	}
-	
+
 	@And("User click add to Cart button")
 	public void userClickOnAddToCartBtn() {
 		click(factory.homePage().addToCartBtn);
 		logger.info("user clicked on add to cart button");
 	}
-	
+
 	@Then("the cart icon quantity should change to {string}")
-	public void theCartIconShouldChange(String cartIcon){
+	public void theCartIconShouldChange(String cartIcon) {
 		// In here I need to change the cartQuantity number to two otherwise
 		// for the next scenario the product quantity will become 4 which will fail
 		// the test case.
 		click(factory.homePage().cartBtn);
-		if(!(factory.homePage().cartQuantityImg.getText().equals("5"))) {
-		sendAndRemove(factory.homePage().qty, cartIcon);
 		getWait();
-		waitTillTextChange(factory.homePage().cartQuantityImg);
+		if (!(factory.homePage().cartQuantityImg.getText().equals("5"))) {
+			getWait();
+			sendRemove(factory.homePage().qty, cartIcon);
+			getWait();
+			waitTillTextChange(factory.homePage().cartQuantityImg);
 		}
 		Assert.assertEquals(factory.homePage().cartQuantityImg.getText(), cartIcon);
 		logger.info("cart icon has been updated to " + cartIcon);
 	}
-	
-	//4
+
+	// 4
 	@And("User click on Cart option")
 	public void userClickOnCartOption() {
 		click(factory.homePage().cartBtn);
 		logger.info("user clicked on cart button");
 	}
-	
+
 	@And("User click on Proceed to Checkout button")
 	public void userClickOnProceedToCheckoutBtn() {
 		click(factory.homePage().proceedBtn);
 		logger.info("user clicked on Proceed to Checkout button");
 	}
-	
+
 	@And("User click Add a new address link for shipping address")
 	public void userClickOnAddANewAddressLink() {
 		click(factory.homePage().addANewAddressLink);
 		logger.info("user clicked on add a new address link");
 	}
-	
-	
+
 	@And("User click Add a credit card or Debit Card for Payment method")
 	public void userClickAddACreditOrDebitCardLink() {
 		click(factory.homePage().addACreditOrDebitCardLink);
 		logger.info("user clicked on add a credit or debit card link");
 	}
-	
+
 	@And("User click on Place Your Order")
 	public void userClickOnPlaceYourOrder() {
 		click(factory.homePage().placeOrderBtn);
 		logger.info("user clicked on place your order button");
 	}
-	
+
 	@Then("a message should be displayed ‘Order Placed, Thanks’")
 	public void orderPlacedMessageShouldBeDisplayed() {
 		Assert.assertTrue(isElementDisplayed(factory.homePage().orderPlacedMessage));
 		logger.info("Order placed message is displayed");
 	}
-	
-	//5
+
+	// 5
 	// Scenario 4 automatically covers scenario 5
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }
