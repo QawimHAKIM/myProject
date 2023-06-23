@@ -11,10 +11,9 @@ public class BaseUITest extends BrowserUtilities{
 	public void setupTest() {
 		super.setupBrowser();
 	}
-	
 	@After
 	public void closeTest(Scenario scenario) {
-		if(scenario.isFailed()) {
+		if(scenario.isFailed() || !scenario.isFailed()) {
 			byte[] screenShot = takeScreenshotAsBytes();
 			scenario.attach(screenShot, "image/png", scenario.getName() + " scenario failed");
 		}

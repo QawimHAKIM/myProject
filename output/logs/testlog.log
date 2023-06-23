@@ -13582,3 +13582,17 @@
 2023-04-05 17:10:07,781 - logger_file -INFO - user entered previous and new passwords
 2023-04-05 17:10:07,870 - logger_file -INFO - user clicked on change password button
 2023-04-05 17:10:08,810 - logger_file -INFO - Password Updated Successfully
+2023-06-22 21:44:40,496 - logger_file -INFO - user is on retail website
+2023-06-22 21:44:40,504 - logger_file -INFO - actual title React App equals expected title: React App
+2023-06-22 21:44:41,063 - logger_file -INFO - user is on retail website
+2023-06-22 21:44:41,069 - logger_file -INFO - actual title React App equals expected title: React App
+2023-06-22 21:45:13,698 - logger_file -INFO - user is on retail website
+2023-06-22 21:45:13,702 - logger_file -INFO - actual title React App equals expected title: React App
+2023-06-22 21:53:54,953 - logger_file -INFO - user is on retail website
+2023-06-22 21:53:54,955 - logger_file -INFO - actual title React App equals expected title: React App
+2023-06-22 21:53:55,087 - logger_file -INFO - user clicked on all section button
+2023-06-22 21:53:55,135 - logger_file -INFO - Electronics equals Electronics
+2023-06-22 21:53:55,160 - logger_file -INFO - Computers equals Computers
+2023-06-22 21:53:55,184 - logger_file -INFO - Smart Home equals Smart Home
+2023-06-22 21:53:55,210 - logger_file -INFO - Sports equals Sports
+2023-06-22 21:53:55,241 - logger_file -INFO - Automative equals Automative
