@@ -3,7 +3,7 @@ package tek.capstone.bdd.framework.utilities;
 import net.datafaker.Faker;
 
 public class DataGenerator {
-	
+
 	public static String data(String input) {
 		Faker faker = new Faker();
 		String output = "";
@@ -30,6 +30,12 @@ public class DataGenerator {
 			output = faker.address().zipCode();
 		} else if (input.equals("cardNumber")) {
 			output = faker.number().digits(16);
+		} else if (input.equals("expirationMonth")) {
+			output = "" + faker.number().numberBetween(1, 12);
+		} else if (input.equals("expirationYear")) {
+			output = "" + faker.number().numberBetween(2024, 2035);
+		} else if (input.equals("securityCode")) {
+			output = faker.number().digits(3);
 		} else {
 			output = faker.expression("");
 		}

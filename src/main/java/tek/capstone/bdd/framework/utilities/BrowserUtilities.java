@@ -217,6 +217,11 @@ public class BrowserUtilities extends BaseSetup{
 		js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 	}
 	
+	public void sendWithJS(String query) {
+		JavascriptExecutor js = ((JavascriptExecutor)getDriver());
+		js.executeScript(query);
+	}
+	
 	public void clearText(WebElement element) {
 		element.clear();	
 	}

@@ -154,7 +154,7 @@ public class HomeSteps extends BrowserUtilities {
 	}
 
 	@And("User click on Place Your Order")
-	public void userClickOnPlaceYourOrder() {
+	public void userClickOnPlaceYourOrder(){
 		click(factory.homePage().placeOrderBtn);
 		logger.info("user clicked on place your order button");
 	}

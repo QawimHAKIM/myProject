@@ -74,7 +74,7 @@ public class RetailAccountPage extends BaseSetup {
 	@FindBy(id = "securityCodeInput")
 	public WebElement securityCodeField;
 
-	@FindBy(id = "paymentSubmitBtn")
+	@FindBy(xpath = "//button[@id='paymentSubmitBtn']")
 	public WebElement addYourCardBtn;
 
 	@FindBy(css = "p[class='account__payment-ad-text']")

@@ -4,6 +4,7 @@ import java.util.List;
 import java.util.Map;
 
 import org.junit.Assert;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 
 import io.cucumber.datatable.DataTable;
@@ -55,18 +56,20 @@ public class RetailAccountSteps extends BrowserUtilities{
 	}
 	
 	@And("User fill Debit or credit card information")
-	public void userFillDebitOrCreditCardInfo(DataTable dataTable) {
+	public void userFillDebitOrCreditCardInfo(DataTable dataTable){
 		List<Map<String, String>> cardsInfo = dataTable.asMaps(String.class, String.class);
 		sendText(factory.accountPage().cardNumberField, DataGenerator.data(cardsInfo.get(0).get("cardNumber")));
 		sendText(factory.accountPage().nameOnCardField, DataGenerator.data(cardsInfo.get(0).get("nameOnCard")));
-		selectByVisibleText(factory.accountPage().expirationMonthInput, cardsInfo.get(0).get("expirationMonth"));
-		selectByVisibleText(factory.accountPage().expirationYearInput, cardsInfo.get(0).get("expirationYear"));
-		sendText(factory.accountPage().securityCodeField, cardsInfo.get(0).get("securityCode"));
+		sendWithJS("document.getElementById(\"expirationMonthInput\").value='11'");
+		sendWithJS("document.getElementById(\"expirationYearInput\").value='2029'");
+		waitTillClickable(factory.accountPage().securityCodeField);
+		sendText(factory.accountPage().securityCodeField, DataGenerator.data(cardsInfo.get(0).get("securityCode")));
 		logger.info("user filled debit or credit cards information");
 	}
 	
 	@And("User click on Add your card button")
-	public void userClickOnAddYourCardBtn() {
+	public void userClickOnAddYourCardBtn(){
+		waitTillClickable(factory.accountPage().addYourCardBtn);
 		click(factory.accountPage().addYourCardBtn);
 		logger.info("user clicked on Add Your card button");
 	}
