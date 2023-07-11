@@ -20,6 +20,7 @@ public class DataGenerator {
 			output = faker.phoneNumber().cellPhone();
 		} else if (input.equals("fullName")) {
 			output = faker.name().fullName();
+			output = output.replaceAll("[^a-zA-Z]", "");
 		} else if (input.equals("streetAddress")) {
 			output = faker.address().streetAddress();
 		} else if (input.equals("city")) {
